@@ -1,0 +1,74 @@
+.q-one{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    transition: 2s all;
+}
+.q-one:hover{
+    transition: 3s;
+    transform: rotateZ(360deg);
+}
+.q-Two{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 119, 128);
+    animation-name: que2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes que2 {
+    100%{
+        transform: scaleY(20%);
+    }
+    
+}
+
+.q-Three{
+    display: grid;
+    width: 500px;
+    height: 400px;
+    background-color: aqua;
+    grid-template-columns: repeat(3,auto);
+}
+.flex-item{
+    margin: 5px;
+    background-color: white;
+}
+.item4{
+    grid-column: 1/4;
+    background-color: tomato;
+}
+.item6{
+    grid-column: 2/4;
+}
+.item2{
+    background-color: rgba(241, 241, 60, 0.404);
+}
+.item6{
+    background-color: pink;
+}
+ 
+ /* example of Descendent selectors  */
+
+div h5{
+    background-color: red;
+}
+
+/* example of Psuedo Selectors */
+
+a:link{
+    text-decoration: none;
+    color: blue;
+    font-size: large;
+}
+a:hover{
+    text-decoration: underline;
+    color: red;
+    font-size: x-large;
+}
+a:visited{
+    text-decoration: overline;
+    color: purple;
+    font-size: large;
+}
+
